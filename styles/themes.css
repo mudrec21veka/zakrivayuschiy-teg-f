@@ -5,99 +5,102 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-
-
 /*✦ theme-dark — класс светлой темы */
 
 :root.theme-light {
   --currentColor: #000000;
   --themes-main-color: #000;
-  --themes-background: #FFF;
+  --themes-background: #fff;
+  --color-text-stroke: #fff;
   --wdth-title: 700;
   --wdth-main: 400;
-  --background-image-themes: repeating-linear-gradient(transparent, transparent, #d3d3d3 2px, #d3d3d3 4px), 
-  repeating-linear-gradient(90deg, transparent, transparent, #d3d3d3 2px, #d3d3d3 4px), 
-  linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  --button-hover-color: #FFFFFF;
-  --disk-hover-color: #FFFFFF;
+  --background-image-themes: repeating-linear-gradient(
+      transparent,
+      transparent,
+      #d3d3d3 2px,
+      #d3d3d3 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent,
+      #d3d3d3 2px,
+      #d3d3d3 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
-
 
 @media (prefers-color-scheme: light) {
   :root.theme-light {
     --currentColor: #000000;
     --themes-main-color: #000000;
-    --themes-background: #FFFFFF;
+    --themes-background: #ffffff;
+    --color-text-stroke: #fff;
     --wdth-title: 700;
     --wdth-main: 400;
-    --background-image-themes: repeating-linear-gradient(transparent, transparent, #d3d3d3 2px, #d3d3d3 4px), 
-    repeating-linear-gradient(90deg, transparent, transparent, #d3d3d3 2px, #d3d3d3 4px), 
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-    --button-hover-color: #FFFFFF;
-    --disk-hover-color: #FFFFFF;
+    --background-image-themes: repeating-linear-gradient(
+        transparent,
+        transparent,
+        #d3d3d3 2px,
+        #d3d3d3 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent,
+        #d3d3d3 2px,
+        #d3d3d3 4px
+      ),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   }
 }
-
 
 /*✦ theme-dark — класс тёмной темы */
 
 :root.theme-dark {
-  --currentColor: #00CC14;
-  --themes-main-color: #00CC14;
+  --currentColor: #00cc14;
+  --themes-main-color: #00cc14;
   --themes-background: #000000;
+  --color-text-stroke: #00cc14;
   --wdth-title: 785;
   --wdth-main: 465;
-  --background-image-themes: repeating-linear-gradient(transparent, transparent, #000 2px, #000 4px), 
-  repeating-linear-gradient(90deg, transparent, transparent, #000 2px, #000 4px), 
-  linear-gradient(to bottom, #007f0c, #004306);
-  --button-hover-color: #00CC14;
-  --disk-hover-color: #00CC14;
+  --background-image-themes: repeating-linear-gradient(
+      transparent,
+      transparent,
+      #000 2px,
+      #000 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent,
+      #000 2px,
+      #000 4px
+    ),
+    linear-gradient(to bottom, #007f0c, #004306);
 }
 
 @media (prefers-color-scheme: dark) {
   :root.theme-dark {
-    --currentColor: #00CC14;
-    --themes-main-color: #00CC14;
+    --currentColor: #00cc14;
+    --themes-main-color: #00cc14;
     --themes-background: #000000;
+    --color-text-stroke: #00cc14;
     --wdth-title: 785;
     --wdth-main: 465;
-    --background-image-themes: repeating-linear-gradient(transparent, transparent, #000 2px, #000 4px), 
-    repeating-linear-gradient(90deg, transparent, transparent, #000 2px, #000 4px), 
-    linear-gradient(to bottom, #007f0c, #004306);
-    --button-hover-color: #00CC14;
-    --disk-hover-color: #00CC14;
+    --background-image-themes: repeating-linear-gradient(
+        transparent,
+        transparent,
+        #000 2px,
+        #000 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent,
+        #000 2px,
+        #000 4px
+      ),
+      linear-gradient(to bottom, #007f0c, #004306);
   }
 }
-
-
-
-/*✦ theme-auto — класс тёмной темы */
-
-:root.theme-auto {
-  --currentColor: #00CC14;
-  --themes-main-color: #00CC14;
-  --themes-background: #000000;
-  --wdth-title: 785;
-  --wdth-main: 465;
-  --background-image-themes: repeating-linear-gradient(transparent, transparent, #000 2px, #000 4px), 
-  repeating-linear-gradient(90deg, transparent, transparent, #000 2px, #000 4px), 
-  linear-gradient(to bottom, #007f0c, #004306);
-  --button-hover-color: #00CC14;
-  --disk-hover-color: #00CC14;
-}
-
-@media (prefers-color-scheme: auto) {
-  :root.theme-auto {
-    --currentColor: #00CC14;
-    --themes-main-color: #00CC14;
-    --themes-background: #000000;
-    --wdth-title: 785;
-    --wdth-main: 465;
-    --background-image-themes: repeating-linear-gradient(transparent, transparent, #000 2px, #000 4px), 
-    repeating-linear-gradient(90deg, transparent, transparent, #000 2px, #000 4px), 
-    linear-gradient(to bottom, #007f0c, #004306);
-    --button-hover-color: #00CC14;
-    --disk-hover-color: #00CC14;
-  }
-}
-

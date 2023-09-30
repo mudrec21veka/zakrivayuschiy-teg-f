@@ -367,15 +367,18 @@ p:last-child {
 .button-type-floopy {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 15px 20px;
+  justify-content: center;
+  gap: 6px;
+  padding: 13px 18px;
 }
 
 .button-type-floopy svg {
   position: relative;
   fill: var(--themes-main-color);
-  block-size: 1.5em;
+  width: 29px;
+  height: 29px;
   mix-blend-mode: difference;
+  padding-top: 2px;
 }
 
 .popup {
@@ -428,6 +431,14 @@ p:last-child {
     margin-bottom: 104px;
   }
 
+  .header__link {
+    padding-top: 120px;
+  }
+
+  .card__text-element {
+    right: 11px;
+  }
+
   .popup {
     width: 340px;
     padding: 32px 42px;
@@ -435,12 +446,13 @@ p:last-child {
 
   .button-type-floopy {
     flex-direction: column;
+    gap: 0;
+    padding-top: 9px;
   }
 
   .button-type-floopy svg {
-    block-size: 2em;
+    width: 45px;
+    height: 45px;
+    padding-left: 8px;
   }
-}
-.header__subtitle {
-  font-size: 14px;
 }

@@ -30,30 +30,6 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
-@media (prefers-color-scheme: light) {
-  :root.theme-light {
-    --currentColor: #000000;
-    --themes-main-color: #000000;
-    --themes-background: #ffffff;
-    --color-text-stroke: #fff;
-    --wdth-title: 700;
-    --wdth-main: 400;
-    --background-image-themes: repeating-linear-gradient(
-        transparent,
-        transparent,
-        #d3d3d3 2px,
-        #d3d3d3 4px
-      ),
-      repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent,
-        #d3d3d3 2px,
-        #d3d3d3 4px
-      ),
-      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  }
-}
 
 /*✦ theme-dark — класс тёмной темы */
 
@@ -81,7 +57,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-dark {
+  :root {
     --currentColor: #00cc14;
     --themes-main-color: #00cc14;
     --themes-background: #000000;

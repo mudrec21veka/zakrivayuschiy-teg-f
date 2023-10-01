@@ -74,7 +74,7 @@
   margin-bottom: 25px;
   color: var(--themes-main-color);
   font-family: var(--accent-font-family);
-  font-size: clamp(14px, 1.5vw, 23px);
+  font-size: clamp(14px, 2vw, 23px);
   font-style: var(--wdth-main);
   text-transform: uppercase;
 }
